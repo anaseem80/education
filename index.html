@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">    <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/droid-arabic-kufi" type="text/css"/>
+        <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap" rel="stylesheet">        <title>Dashboard</title>
+    </head>
+    <body>
+          <div class="tob-bar">
+            <div class="container">
+                <div class="tob-bar-content">
+                    <div class="social-icons wow fadeInLeft">
+                        <a href="#"><i class="fa fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                      </div>
+                    <div class="links-about wow fadeInRight">
+                          <a href="profile.html">من انا ؟</a>
+                          <a href="#my-goals">الهدف</a>
+                          <a href="#how-to-use-website">كيفيه الاستخدام</a>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="header">
+                  <div class="header-content">
+                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img class="d-block w-100" src="images/4.jpg" alt="First slide">
+                          </div>
+                          <div class="carousel-item">
+                            <img class="d-block w-100" src="images/2.jpg" alt="Second slide">
+                          </div>
+                          <div class="carousel-item">
+                            <img class="d-block w-100" src="images/6.jpg" alt="Third slide">
+                          </div>
+                          <div class="carousel-item">
+                            <img class="d-block w-100" src="images/10.jpg" alt="Third slide">
+                          </div>
+                          <div class="carousel-item">
+                            <img class="d-block w-100" src="images/12.jpg" alt="Third slide">
+                          </div>
+                        </div>
+                        <div class="next-prev">
+                            <a class="butt next" href="#carouselExampleControls" role="button" data-slide="prev">
+                                <img src="icons/Asset 26mdpi.png" alt="">
+                              </a>
+                              <a class="butt prev" href="#carouselExampleControls" role="button" data-slide="next">
+                                <img src="icons/Asset 24mdpi.png" alt="">
+                              </a>
+                        </div>
+                    </div>
+                    <div class="login-reg-butt">
+                        <div class="logo">
+                            <img src="icons/Asset 25mdpi.png" alt="" class="wow fadeInDown">
+                        </div>
+                        <div class="butts">
+                            <button id="registerButt" class="wow fadeInLeft">تسجيل جديد</button>
+                            <button id="loginButt" class="wow fadeInRight">دخول</button>
+                        </div>
+                    </div>
+                    <form action="" id="registerForm">
+                      <span class="close-r">x</span>
+                      <div class="register-content">
+                        <p class="title-form">تسجيل حساب جديد</p>
+                        <label for="name">اسم الطالب</label><br>
+                        <input type="text" placeholder="ادخل اسمك كاملاًً" id="name"><br>
+                        <label for="email">البريد الالكتروني</label><br>
+                        <input type="email" id="email" placeholder="ادخل البريد الالكتروني الخاص بك"><br>
+                        <label for="password">كلمه المرور</label><br>
+                        <input type="password" id="password" placeholder="*************"><br>
+                        <div class="number-phone">
+                          <div class="student-num">
+                            <label for="num-s">رقم تليفون الطالب</label><br>
+                            <input type="number" id="num-s">
+                          </div>
+                          <div class="parent-num">
+                            <label for="num-p">رقم تليفون أحد الوالدين</label><br>
+                            <input type="number" id="num-p">
+                          </div>
+                        </div>
+                        <label for="stage">اختر الصف</label><br>
+                        <select id="stage" dir="rtl">
+                          <option value="">الصف الاول الاعدادي</option>
+                          <option value="">الصف الاول الثانوي</option>
+                          <option value="">الصف الثاني الثانوي</option>
+                          <option value="">الصف الثالث الثانوي</option>
+                        </select><br>
+                        <label for="time">اختر الميعاد</label><br>
+                        <select id="time" dir="rtl">
+                          <option value="">الساعه الرابعه عصراٌٌ</option>
+                          <option value="">الساعه الثانيه ظهراٌٌ</option>
+                          <option value="">الساعه الخامسه مساء</option>
+                        </select>
+                        <button class="btn btn-primary w-100">تسجيل</button>
+                      </div>
+                    </form>
+                    <form action="" id="loginForm">
+                      <span class="close-l">x</span>
+                      <div class="register-content" style="height: 450px;">
+                        <p class="title-form">تسجيل الدخول</p>
+                        <label for="email">البريد الالكتروني</label><br>
+                        <input type="email" id="email" placeholder="ادخل البريد الالكتروني الخاص بك"><br>
+                        <label for="password">كلمه المرور</label><br>
+                        <input type="password" id="password" placeholder="*************"><br>
+                        <div class="forget">
+                          <p dir="ltr">ليس لديك حساب ؟ <a href="#">حساب جديد</a></p>
+                          <a href="#">نسيت كلمه المرور؟</a>
+                        </div>
+                        <button class="btn btn-primary w-100">دخول</button>
+                      </div>
+                    </form>
+                  </div>
+          </div>
+          <div class="line"></div>
+          <div class="who-im-sec" id="who-im-sec">
+              <div class="container">
+                  <div class="who-im-content">
+                      <div class="content-me-left wow fadeInLeft">
+                          <h2>من انا ؟</h4>
+                          <p dir="rtl">مدرسه مواد فلسفيه بمدينه الشيخ زايد ومعد اوائل الجمهوريه في المواد الفلسفيه.</p>
+                          <p dir="rtl">الفلسفه علم الحياه وعلم النفس نبض الروح عشان كده بقولك اوعي تحفظ .. افهم عشان تعرف تحل وتتعامل مع أي موقف وأي سؤال تتحط فيه</p>
+                      </div>
+                      <div class="img-me-right wow fadeInRight">
+                          <div class="img-rotate">
+                            <div class="rotate">
+                              <img src="images/1.jpg" alt="">
+                            </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="video-system">
+            <div class="container">
+              <div class="video-system-content">
+                <div class="info-system wow fadeInLeft">
+                    <p>النظام اتغير واحنا كمان بنتغير علشان كده هكون معاكم من أول لحظه في السنه لاخر لحظه بأسلوب جديد وطريقه جديده </p>
+                    <p>اتفرجو علي الفيديو واعرفو النظام الجديد الي هنمشي بيه</p>
+                </div>
+                <div class="video wow fadeInRight">
+                  <video src="images/WhatsApp Video 2020-09-19 at 6.57.04 PM.mp4"></video>
+                  <div class="play-img">
+                     <img src="icons/Asset 29mdpi.png" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="my-goals" id="my-goals">
+            <div class="container">
+              <div class="my-goals-content">
+                <div class="goals-info wow fadeInDown">
+                  <h1>هدفي هو</h1>
+                  <p>ازاله عقده الفلسفه من دماغك واحببك فيها</p>
+                </div>
+                <div class="goalss">
+                    <div class="goals-im wow fadeInUp">
+                      <div class="goals-imgs">
+                        <img src="icons/متابعة اول بأولmdpi.png" alt="">
+                      </div>
+                      <p>متابعه اول بأول</p>
+                    </div>
+                    <div class="goals-im wow fadeInUp">
+                      <div class="goals-imgs">
+                        <img src="icons/اختبارات شهريةmdpi.png" alt="">
+                      </div>
+                      <p>اختبارات شهريه</p>
+                    </div>
+                    <div class="goals-im wow fadeInUp">
+                      <div class="goals-imgs">
+                        <img src="icons/اختبارات شاملةmdpi.png" alt="">
+                      </div>
+                      <p>اختبارات شامله</p>
+                    </div>
+                    <div class="goals-im wow fadeInUp">
+                      <div class="goals-imgs">
+                        <img src="icons/فيديوmdpi.png" alt="">
+                      </div>
+                      <p>محاضرات مسجله</p>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        <div class="how-to-use-website" id="how-to-use-website">
+              <div class="container">
+                <div class="how-to-use-content">
+                  <div class="top-use">
+                    <h3 class="how-use-title wow fadeInDown">كيفيه استخدام الموقع ؟</h3>
+                    <div class="imgs-to-how-to-use">
+                      <div class="img-use wow fadeInUp">
+                        <div class="img-u"><img src="icons/استلم نتيجتكmdpi.png" alt=""></div>
+                        <p>استلم نتيجتك</p>
+                      </div>
+                      <div class="img-use wow fadeInUp">
+                        <div class="img-u"><img src="icons/قم باختباراتكmdpi.png" alt=""></div>
+                        <p>قم بأختبارك</p>
+                      </div>
+                      <div class="img-use wow fadeInUp">
+                        <div class="img-u"><img src="icons/سجل دخولكmdpi.png" alt=""></div>
+                        <p>سجل دخولك</p>
+                      </div>
+                  </div>
+                  </div>
+                  <div class="bottom-use">
+                    <div class="bottom-use-content">
+                      <div class="left-bottom-use wow fadeInLeft">
+                        <img src="icons/تلفونmdpi.png" alt="">
+                      </div>
+                      <div class="right-bottom-use wow fadeInRight">
+                        <p class="soon">قريبا سيكون متوفر تطبيقنا علي</p>
+                        <div class="apple-google">
+                          <a href="#">
+                            <div class="googlePlay">
+                              <img src="icons/Asset 23mdpi.png" alt="">
+                              <p>Google Play</p>
+                            </div>
+                          </a>
+                          <span></span>
+                          <a href="#">
+                            <div class="appleStore">
+                              <img src="icons/Asset 22mdpi.png" alt="">
+                              <p>Apple Store</p>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+          <div class="footer">
+              <div class="container">
+                <div class="footer-content">
+                  <div class="footer-content-1 wow fadeInLeft">
+                    <p>حمل التطبيق من</p>
+                    <a href="#"><button><img src="icons/Asset 23mdpi.png" alt="">Google Play</button></a><br>
+                    <a href="#"><button><img src="icons/Asset 22mdpi.png" alt="">App Store</button></a>
+                  </div>
+                  <div class="footer-content-2 wow fadeInDown">
+                    <p>تواصل معنا عبر وسائل التواصل الاجتماعي</p>
+                    <div class="social-icons-footer">
+                      <div><a href="#"><i class="fa fa-youtube"></i></a></div>
+                      <div><a href="#"><i class="fab fa-instagram"></i></a></div>
+                      <div><a href="#"><i class="fa fa-twitter"></i></a></div>
+                      <div><a href="#"><i class="fa fa-facebook"></i></a></div>
+                    </div>
+                  </div>
+                  <div class="footer-content-3 wow fadeInRight">
+                     <h5>الأستاذه</h5>
+                     <h1>لبني زهران</h1>
+                     <p>مدرسه مواد فلسفيه بمدينه الشيخ زايد ومعد اوائل الجمهوريه في المواد الفلسفيه</p>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="footer-copyright">
+            <p class="wow fadeInUp">جميع الحقوق محفوظه لدي أ.لبني زهران</p>
+          </div>
+        <div class="about-make-website">
+          <p>الموقع من انشاء فريق عمل المهندس كريم حمدي</p>
+          <p>للتواصل معنا</p>
+          <div class="social-about-make-website">
+            <a href="#"><i class="fa fa-google"></i></a>
+            <a href="#"><i class="fa fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <script src="https://kit.fontawesome.com/a1a75d5546.js" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+        <script src="js/app.js"></script>
+        <script src="js/wow.min.js"></script>
+        <script>new WOW().init();</script>
+    </body>
+</html>
